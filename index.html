@@ -4,163 +4,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Enlaces a css-->
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilos/base.css">
     <link rel="stylesheet" href="estilos/main.css">
     <link rel="stylesheet" href="estilos/vendor.css">
-    <link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.css">
+    <!--<link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.css">-->
     <!--JavaScript
-    =============================================-->
+    ===================================================-->
     <script src="js/modernizr.js"></script>
-    <!--El js/pace.min.js es una libreria
-    =============================================-->
     <script src="js/pace.min.js"></script>
-    <!--Favicon - icono de la pestaña, una en apple y la otra en windows
-    ====================================================================-->
+
+    <!--Favicon - icono de la pestaña
+    ===================================================-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <title>Portafolios</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="imagene/favicon_portafolio_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagene/favicon_portafolio_16x16.png">
+    <title>Portafolio</title>
 </head>
 
 <body id="top">
-    <!--Vista de carga o loading
-    ============================-->
+    <!--vista de carga o loading-->
     <div id="preloader">
         <div id="loader"></div>
     </div>
-    <!--Empezamos con el header
-    ============================-->
+    <!--Empeazados con el header
+    ====================================================-->
     <header class="s-header">
         <div class="header-logo">
             <a href="index.html" class="site-logo">
-                <img src="imagenes/logo.svg" alt="Homapage">
+                <img src="img/logo.svg" alt="Homepage">
             </a>
         </div>
-        <!--Barra de Navegacion----(nav.header-nav-wrap)
-        ================================================-->
+        <!--Barra de Navegación 
+        =================================================-->
         <nav class="header-nav-wrap">
             <ul class="header-main-nav">
-                <li class="current"><a href="#intro" class="smoothscroll" title="intro">Introduction</a></li>
+                <li class="current"><a href="#intro" class="smoothscroll" title="intro">Introducción</a></li>
                 <li><a href="#about" title="about" class="smoothscroll">About</a></li>
                 <li><a href="#services" title="services" class="smoothscroll">Services</a></li>
-                <li><a href="#works" title="works" class="smoothscroll">works</a></li>
-                <li><a href="#contact" title="contact us" class="smoothscroll">contact</a></li>
+                <li><a href="#works" title="works" class="smoothscroll">Works</a></li>
+                <li><a href="#contact" title="contact us" class="smoothscroll">Contact</a></li>
             </ul>
+
             <!--Creamos una lista desordenada para las redes sociales
-            =========================================================-->
+            ======================================-->
             <ul class="header-social">
-                <!--El elemento i nos sirve para visualisar algun icono, aria-hidden es una api para consumir los recursos de una pagina web externa a nuestro lugar
-                =============================================================================-->
-                <li><a href="#1"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#2"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#1"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#2"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                 <li><a href="#3"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#4"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
-        <a href="#" class="header-menu-toggle"><span>Menu</a>
-    </header> <!--Fin del header
-    ============================-->
-    <!--Introduccion
-    =====================================================-->
+        <a href="#" class="header-menu-toggle"><span>Menu</span></a>
+    </header><!--fin del header-->
+
+    <!--INtroduccion
+    ===============================================-->
     <section id="intro" class="s-intro target-section">
         <div class="row intro-content">
             <div class="column large-9 mob-full intro-text">
-                <h3>Hola, mi nombre es David Ruiz</h3>
+                <h3>Hi, my name is Alejandro Bedoya</h3>
                 <h1>
-                    <!--Se utiliza el elemento br para hacer un salto en la linea de texto
-                    ======================-->
-                    Desarrollador web <br>
-                    Jugador de lol
+                    Estudiante de Desarrollo en Software <br>
+                    Estudiante de Gastronomía <br>
+                    Administrador de Servidores de MC <br>
+                    Estudiante de Valorant Iconics <br>
                 </h1>
             </div>
             <div class="intro-scroll">
                 <a href="#about" class="intro-scroll-link smoothscroll">
-                    Presiona para mas informacion
+                    Presiona para más
                 </a>
+
             </div>
-            <!--La clase intro grid podra ser usado para crear una cuadricula-->
             <div class="intro-grid"></div>
-            <!--La clase intro pic se puede llegar a utilizar para contener una imagen-->
             <div class="intro-pic"></div>
-        </div> <!--Finalizacion del row-->
-    </section> <!--Finalizacion del intro-->
-    <!--about(sobre nosotros)
-    ===========================-->
+
+        </div><!--end row-->
+    </section><!--end intro-->
+
+    <!--about
+    ==========================================================-->
     <section id="about" class="s-about target-section">
         <div class="about-me">
-            <!--En el div row heading block es el que tendra nuestra encabezera-->
             <div class="row heading-block">
-                <!--Vamos a generar una sola columna de nuestro h2-->
-                <div class="colum large-full">
+                <div class="column large-full">
                     <h2 class="section-heading">About me</h2>
                 </div>
             </div>
-            <!--La clase row about-me__content es donde se tendra nuestro contenido o cuerpo-->
             <div class="row about-me__content">
-                <div class="colum large-full about-me__text">
-                    <!--La clase lead del elemento p me generara la primera parte de mi biografia-->
+                <div class="column large-full about-me__text">
                     <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi reprehenderit non
-                        repudiandae! Odit nobis exercitationem laboriosam sint fuga maiores ad perferendis magni
-                        tempore, voluptate molestias, vitae repellat quibusdam ipsum.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatem vel tempora animi!
-                        Odio molestiae blanditiis perferendis, quidem dignissimos quod cupiditate minima illum
-                        consectetur suscipit! Beatae reiciendis nobis ipsam obcaecati.
-                    </p>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quo quae suscipit quibusdam
-                        excepturi consectetur, nihil rem dolores nisi voluptates ipsa dicta est porro eos ab maxime
-                        officia, nulla placeat.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo vel consequatur similique
-                        aut pariatur ut ipsam non recusandae totam, illum in numquam velit nostrum optio tenetur maxime
-                        architecto corporis. Autem.
-                    </p>
-                </div>
-            </div>
-            <!--Crear un boton que me lleve a una pagina donde tendre mi -->
-            <div class="row about-me__buttons">
-                <!--Solo se utilizara la mitad de mi pantalla para mi contenido-->
-                <div class="column large-half tab-full">
-                    <!--Aqui estara el link de la pagina para que me seleccione-->
-                    <a href="#" class="btn btn--stroke full-width">Hire me</a>
-                </div>
-                <!--Documento pdf de mi CV-->
-                <div class="colum large-half tab-full">
-                    <a href="#" class="btn btn--primary full-width">Download CV</a>
-                </div>
-            </div>
-        </div> <!--End about me
-        =======================-->
+                        Alejandro Bedoya estudió en el "Liceo la Alborada" sus últimos 3 años de bachillerato obtiendo
+                        su diploma como egresado del mismo Liceo. Se destaca por
+                        tener una participación activa en liderar a grupos de trabajo y coordinación acertada, fue
+                        represante del consejo estudiantil en su último año junto algunos compañeros
+                        de su curso, lo que da a conocer una gran dedicación con la parte académica y responsabilidad en
+                        trabajo
 
-        <!--Experience-->
-        <div class="about-experience">
-            <!--Esta parte sera nuestro encabezado-->
-            <div class="row heading-block">
-                <div class="column large-full">
-                    <h2 class="section-heading">Work & education</h2>
+                    <p>
+                        Asimismo, Alejandro se graduo con honores entre los mejores 10 de su generación de bachillerato
+                        internacional,
+                        sus logros deportivos por ser campeón provincial de Natación Mariposa Pichincha 2022. Esta
+                        distinción refleja su disposición y dedicación hacia las responsabilidades asignadas y
+                        personales de manera tranquila y concentrada
+
+                    </p>
+                    <p>Actualmente, Alejandro Bedoya es un estudiante de una carrera universitaria en la Universidad de
+                        las Américas y una carrera técnica en el Instituto Superior Tecnológico
+                        Quito. Lo cual destaca en su compromismo por realizar sus sueños y ajustar los mismos con una
+                        introducción a su futuro</p>
+
+                    <p>De manera adicional, Alejandro le gustaría terminar el tecnológico luego de graduarse de su
+                        carrera universitaria para poder hacer un restaurante y todo lo relacionado a conexiones seguras
+                        y administración en páginas de promoción para el local dando entrada a nuevas formas de
+                        conocimiento en base a desarrollo en software</p>
+
+                </div>
+
+            </div>
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full">
+                    <a href="#" class="btn btn--stroke full-width">Hire Me</a>
+                </div>
+                <div class="column large-half tab-full">
+                    <a href="#" class="btn btn--primary full-width">Dowload CV</a>
                 </div>
             </div>
-            <!--Generar el cuerpo de nuestra linea de tiempo-->
+        </div><!--End about me-->
+
+        <!--Sección principal que contiene toda la experiencia laboral y educativa-->
+        <div class="about-experience">
+            <!--Fila que contiene el encabezado de la sección "Work & Education"-->
+            <div class="row heading-block">
+                <!--Columna que ocupa todo el ancho disponible-->
+                <div class="column large-full">
+                    <!--Encabezado de h2 que presenta la sección-->
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+
+            <!--Fila que contiene los elementos de la línea de tiempo para trabajos y educación-->
+            <!--Columna izquierda: Experiencia laboral-->
             <div class="row about-experience__timeline">
+                <!--Columna que ocupa la mitad del ancho en pantallas grandes y todo el ancho en pantallas más pequeñas-->
                 <div class="column large-half tab-full">
+                    <!--Contenedor de la línea de tiempo-->
                     <div class="timeline">
+                        <!--Contenedor del ícono de la línea de tiempo-->
                         <div class="timeline_icon-wrap">
-                            <!--La etiqueta span sirve para generar un pequeño espacio donde se podra
-                            colocar un icono-->
-                            <span class="timeline_icon- timeline_icon--work"></span>
+                            <!--Ícono que representa el trabajo-->
+                            <span class="timeline_icon timeline_icon--work"></span>
                         </div>
+
+                        <!--Bloque de la línea de tiempo: Primer trabajo-->
                         <div class="timeline__block">
-                            
+                            <!--Representa un punto en la línea de tiempo (normalmente visualmente)-->
+                            <div class="timeline__bullet"></div>
+
+                            <!--Encabezado del bloque que contiene las fechas y títulos del trabajo-->
+                            <p class="timeline__timeframe">April 2024 - Present</p>
+                            <h3 class="item-title">Instituto Tecnológico Quito</h3>
+                            <h5>Student</h5>
+                        </div>
+                        <!--Descripción del evento académico: Detalla la actividad o rol desempeñado-->
+                        <div class="timeline__desc">
+                            <p>Estudiante de Desarrollo en Software, segundo semestre</p>
+                        </div>
+                    </div>
+                    <!--Bloque de la línea de tiempo: Segunda experiencia académica-->
+                    <div class="timeline__block">
+                        <!--Punto visual que marca el inicio de un nuevo evento en la línea de tiempo-->
+                        <div class="timeline__bullet">
+                            <!--Encabezado con la fecha y los detalles del evento actual-->
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">September 2022 - Present</p>
+                                <h3 class="item-title">Universidad de las Américas (UDLA)</h3>
+                                <h5>Student</h5>
+                            </div>
+                            <!--Descripción del evento: Información específica del estudiante y su progreso-->
+                            <div class="timeline__desc">
+                                <p>Estudiante de Gastronomía, quinto semestre</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Bloque de la línea de tiempo: Otra institución educativa secundaria -->
+            <div class="column large-half tab-full">
+                <div class="timeline">
+                    <div class="timeline__icon-wrap">
+                        <span class="timeline__icon timeline_icon--education"></span>
+                    </div>
+
+                    <!--Bloque de la línea de tiempo: Educación secundaria-->
+                    <div class="timeline__block">
+                        <!--Representación visual de este hito en la línea de tiempo-->
+                        <div class="timeline__bullet"></div>
+                        <!--Encabezado con las fechas y detalles de la institución educativa-->
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">September 2020 - June 2022</p>
+                            <h3 class="item-title">Liceo La Alborada</h3>
+                            <h5>Graduate Student</h5>
+                        </div>
+                        <!--Descripción del evento: Información sobre la experiencia del estudiante en el Liceo-->
+                        <div class="timeline__desc">
+                            <p>Fue estudiante de Bachillerato Internacional en Liceo la Alborada</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__block"> </div>
+                    <!--Punto visual representando este evento en la línea de tiempo-->
+                    <div class="timeline__bullet">
+                        <!--Encabezado con fechas y detalles de la institución-->
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">September 2017 - June 2020 </p>
+                            <h3 class="item-title"> Unidad Educativa Sagrados Corazones de Rumipamba</h3>
+                            <h5>Graduate Student</h5>
+                        </div>
+                        <!--Descripción del evento: Información sobre el estudiante y su experiencia-->
+                        <div class="timeline__desc">
+                            <p>Fue estudiante de secundaria en Sagrados Corazones de Rumipamba</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+
+        </div><!--end about experience-->
+
+    </section><!-- end s-about-->
+    <!--Services
+    ========================================================================================================    -->
+
+    <!--Sección de servicios o habilidades, con un tema oscuro y un objetivo para navegación-->
+    <section id="services" class="s-services ss-dark target-section">
+        <!--Superposición de sombra para efectos visuales en la sección-->
+        <div class="shadow-overlay"></div>
+        <!--Fila para el bloque de encabezado centrado-->
+        <div class="row heading-block heading*block--center">
+            <!--Columna que ocupa todo el ancho de la fila-->
+            <div class="column large-full">
+                <!--Título principal de la sección con un estilo centrado hacia la parte inferior-->
+                <h2 class="section-heading section-heading--centerbottom">Capabilities/Skills</h2>
+                <!--Descripción de la sección, con un enfoque hacia la misión o propósito del servicio-->
+                <p class="section-desc">
+                    Mi enfoque es poder aprovechar la parte tecnológica en la Gastronomía Moderna, realizar nuevos
+                    cambios y servicios para poder hacer un nuevo concepto gastronómico
+                </p>
+            </div>
+        </div><!--end heading-block-->
+        <!-- Fila para la lista de servicios, adaptada a diferentes tamaños de pantalla -->
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+            <!--Primer servicio: Desarrollo web-->
+            <div class="column item-service">
+                <div class="item-service__content">
+                    <!--Título del servicio ofrecido-->
+                    <h4 class="item-title">Web development</h4>
+                    <p>
+                        introducir las tecnologías clave para la creación de páginas web: HTML, CSS y JavaScript. A
+                        través de esta asignatura, enseñar a estructurar y diseñar sitios web,
+                        comprendiendo cómo estas herramientas se integran en el desarrollo web.
+                    </p>
+
+                    <a href="https://eva.itq.edu.ec/course/view.php?id=3323"> Introducción Desarrollo Web </a>
+                </div>
+
+            </div>
+
+
+            <div class="column item-service">
+                <div class="item-services__content">
+                    <h4 class="item-title">Mobile Development</h4>
+
+                    <p>
+                        Transforma tus ideas en aplicaciones móviles innovadoras y funcionales que impulsarán tu negocio
+                        hacia el éxito. Con un enfoque personalizado y las últimas tecnologías, desarrollamos soluciones
+                        móviles que se adaptan a las necesidades de tus usuarios y a los objetivos de tu empresa.
+                    </p>
+                </div>
+            </div>
+            <!--Contenedor de la columna que presenta un servicio específico-->
+            <!--data-aos es un atributo personalizado utilizado para controlar las animaciones de una librería llamada AOS (Animate On Scroll). 
+            AOS es una librería JavaScript que permite animar elementos en una página web cuando estos entran en el área visible del navegador al hacer scroll.-->
+            <div class="column item-service">
+                <!--Contenido del servicio: incluye un título y una descripción-->
+                <div class="item-service__content">
+                    <!--Título del servicio: desarrollo de aplicaciones de escritorio-->
+                    <h4 class="item-title">desktop applications</h4>
+                    <!--Descripción del servicio: texto de relleno (placeholder)-->
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+            <!--Repetición de la estructura anterior para otro servicio: seguridad informática-->
+            <div class="column item-service">
+                <div class="item-service__content">
+                    <!--Título del servicio: seguridad informática-->
+                    <h4 class="item-title">computer security</h4>
+                    <p>
+                        Desarrollo y optimización de aplicaciones de escritorio eficientes y escalables, con un enfoque
+                        en la usabilidad, rendimiento y adaptabilidad a diversas plataformas.
+                    </p>
+                </div>
+            </div>
+
+            <!--Repetición para un tercer servicio: diseño UI/UX-->
+            <div class="column item-service">
+                <div class="item-service__content">
+                    <!--Título del servicio: diseño de interfaces de usuario y experiencia de usuario-->
+                    <h4 class="item-title">UI/UX Design</h4>
+                    <p>
+                        Experto en diseño de UI/UX, centrado en crear experiencias de usuario funcionales y visualmente
+                        atractivas, garantizando una navegación fluida y optimizada para maximizar la interacción y el
+                        engagement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Último servicio: inteligencia artificial -->
+            <div class="column item-service">
+                <div class="item-service__content">
+                    <!--Título del servicio: inteligencia artificial-->
+                    <h4 class="item-title">Artificial intelligence</h4>
+                    <p>
+                        Experto en inteligencia artificial, centrado en la creación de sistemas inteligentes que
+                        aprenden y se adaptan, aportando soluciones innovadoras a retos tecnológicos
+                    </p>
+                </div>
+            </div><!-- end services-list-->
+        </div><!--en s-services-->
+
+    </section>
+
+
+
 </body>
 
 </html>
